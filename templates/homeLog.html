@@ -1,0 +1,231 @@
+{% extends 'nav.html' %}
+
+{% block navbody %}  
+    <div class="container-fluid">
+      
+      <div class="row">
+        
+        <div class="col-md-2 ml-5 mt-5 " style="background-color: #ffa3b7;color: black;border: 10px solid black;">
+          <h3 style="text-align: center;">स्वागत हे {{c[1]}} !!</h3>
+          <img src= {{ url_for('static',filename=c[4]) }} height="auto" width="100%">
+          <hr>
+          <form action="" method="POST" enctype=multipart/form-data >
+            <div>
+              <p>अपनी तस्वीर अपडेट करें:
+                <div class="choose_file">फ़ाइल का चयन<input class='hide_file' name=file type="file"></div>
+                <div style="display: none;"><input type=submit value=सबमिट  ></div></p>
+            </div>
+            <div>
+            <p><input type=submit value=सबमिट style="background-color: black;border-radius: 10px;color: white;"></p>
+            </div>
+          </form>
+          <hr>
+          <p style="font-size: 20px">कुल अंक: {{c[5]}}</p>
+        </div>
+
+        <div class="col-md-1 mt-5">
+          
+        </div>
+
+        <div class="col-md-8 mt-5" style="position: relative;">
+          
+          <span class="GameType" id="mp_button" onclick="document.getElementById('single_cat').style.visibility='hidden'; document.getElementById('multi_cat').style.visibility='visible';document.getElementById('sp_button').style.background='black';this.style.background='green'">मल्टीप्लेयर</span>
+          
+          <span class="GameType" id="sp_button" onclick="document.getElementById('single_cat').style.visibility='visible'; document.getElementById('multi_cat').style.visibility='hidden'; document.getElementById('mp_button').style.background='black';this.style.background='green'">सिंगलप्लेयर</span>
+
+          <br>
+          <br>
+
+          <div class="row" id="single_cat" style="font-size: 20px;visibility: hidden; position: absolute;">
+            
+            <div class="card">
+              {% if categories[0] == 0 %}
+                <span style="color: red;">तैयार नही</span>
+                <a href='#'>
+              {% else %}
+                <a href='{{c[1]}}/singleplayer/compounds/'>
+              {% endif %}
+
+              <p class="card-text">रासायनिक यौगिक</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/cc.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              {% if categories[1] == 0 %}
+                <span style="color: red;">तैयार नही</span>
+                <a href='#'>
+              {% else %}
+                <a href='{{c[1]}}/singleplayer/elements/'>
+              {% endif %}
+
+                <p class="card-text">रासायनिक तत्व</p>
+                <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/ce.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              {% if categories[2] == 0 %}
+                <span style="color: red;">तैयार नही</span>
+                <a href='#'>
+              {% else %}
+                <a href='{{c[1]}}/singleplayer/stars/'>
+              {% endif %}
+
+              <p class="card-text">सितारे</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/st.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              {% if categories[3] == 0 %}
+                <span style="color: red;">तैयार नही</span>
+                <a href='#'>
+              {% else %}
+                <a href='{{c[1]}}/singleplayer/theorems/'>
+              {% endif %}
+
+              <p class="card-text">प्रमेयों</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/th.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              {% if categories[4] == 0 %}
+                <span style="color: red;">तैयार नही</span>
+                <a href='#'>
+              {% else %}
+                <a href='{{c[1]}}/singleplayer/diseases/'>
+              {% endif %}
+
+              <p class="card-text">रोग</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/di.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              {% if categories[5] == 0 %}
+                <span style="color: red;">तैयार नही</span>
+                <a href='#'>
+              {% else %}
+                <a href='{{c[1]}}/singleplayer/softwares/'>
+              {% endif %}
+
+              <p class="card-text">सॉफ्टवेयर्स</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/so.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              {% if categories[6] == 0 %}
+                <span style="color: red;">तैयार नही</span>
+                <a href='#'>
+              {% else %}
+                <a href='{{c[1]}}/singleplayer/biologicalprocess/'>
+              {% endif %}
+
+              <p class="card-text">जैविक प्रक्रिया</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/bp.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              {% if categories[7] == 0 %}
+                <span style="color: red;">तैयार नही</span>
+                <a href='#'>
+              {% else %}
+                <a href='{{c[1]}}/singleplayer/rivers/'>
+              {% endif %}
+
+              <p class="card-text">नदियों</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/ri.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              {% if categories[8] == 0 %}
+                <span style="color: red;">तैयार नही</span>
+                <a href='#'>
+              {% else %}
+                <a href='{{c[1]}}/singleplayer/mountains/'>
+              {% endif %}
+
+              <p class="card-text">पहाड़ों</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/mo.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              {% if categories[9] == 0 %}
+                <span style="color: red;">तैयार नही</span>
+                <a href='#'>
+              {% else %}
+                <a href='{{c[1]}}/singleplayer/countries/'>
+              {% endif %}
+
+              <p class="card-text">देश</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/co.png" alt="Card image cap"></a>
+            </div>
+
+          </div>
+
+          <div class="row" id="multi_cat" style="font-size: 20px;visibility: hidden;position: absolute;">
+            
+            <div class="card">
+              <a href='{{c[1]}}/multiplayer/compounds/'>
+              <p class="card-text">रासायनिक यौगिक</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/cc.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              <a href='{{c[1]}}/multiplayer/elements/'>
+              <p class="card-text">रासायनिक तत्व</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/ce.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              <a href='{{c[1]}}/multiplayer/stars/'>
+              <p class="card-text">सितारे</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/st.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              <a href='{{c[1]}}/multiplayer/theorems/'>
+              <p class="card-text">प्रमेयों</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/th.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              <a href='{{c[1]}}/multiplayer/diseases/'>
+              <p class="card-text">रोग</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/di.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              <a href='{{c[1]}}/multiplayer/softwares/'>
+              <p class="card-text">सॉफ्टवेयर</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/so.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              <a href='{{c[1]}}/multiplayer/biologicalprocess/'>
+              <p class="card-text">जैविक प्रक्रिया</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/bp.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              <a href='{{c[1]}}/multiplayer/rivers/'>
+              <p class="card-text">नदियों</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/ri.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              <a href='{{c[1]}}/multiplayer/mountains/'>
+              <p class="card-text">पहाड़ों</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/mo.png" alt="Card image cap"></a>
+            </div>
+
+            <div class="card">
+              <a href='{{c[1]}}/multiplayer/countries/'>
+              <p class="card-text">देश</p>
+              <img class="card-img" style="width: 13rem;height: 6rem;" src="/static/images/tile_images/co.png" alt="Card image cap"></a>
+            </div>
+
+          </div>
+        
+        </div>
+     
+      </div>
+    </div>
+{% endblock %}

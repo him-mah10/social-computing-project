@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" width="485.20361" height="493.05746" id="svg3570" sodipodi:version="0.32" inkscape:version="0.46" sodipodi:docname="buddy.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <sodipodi:namedview inkscape:window-height="675" inkscape:window-width="640" inkscape:pageshadow="2" inkscape:pageopacity="0.0" guidetolerance="10.0" gridtolerance="10.0" objecttolerance="10.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" showgrid="false" inkscape:zoom="0.93701046" inkscape:cx="93.724066" inkscape:cy="246.52873" inkscape:window-x="88" inkscape:window-y="66" inkscape:current-layer="svg3570"/>
+  <defs id="defs3572">
+    <inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 246.52873 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="485.20361 : 246.52873 : 1" inkscape:persp3d-origin="242.60181 : 164.35249 : 1" id="perspective48"/>
+    <linearGradient id="linearGradient4917">
+      <stop id="stop4919" style="stop-color:#000000;stop-opacity:1" offset="0"/>
+      <stop id="stop4921" style="stop-color:#f2f2f2;stop-opacity:1" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4893">
+      <stop id="stop4895" style="stop-color:#000000;stop-opacity:1" offset="0"/>
+      <stop id="stop4897" style="stop-color:#000000;stop-opacity:0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4909">
+      <stop id="stop4911" style="stop-color:#000000;stop-opacity:1" offset="0"/>
+      <stop id="stop4913" style="stop-color:#cccccc;stop-opacity:1" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4931">
+      <stop id="stop4933" style="stop-color:#000000;stop-opacity:1" offset="0"/>
+      <stop id="stop4935" style="stop-color:#cccccc;stop-opacity:1" offset="1"/>
+    </linearGradient>
+    <linearGradient x1="806.42859" y1="146.64789" x2="848.66376" y2="148.45744" id="linearGradient4824" xlink:href="#linearGradient3939" gradientUnits="userSpaceOnUse" gradientTransform="translate(0,154)"/>
+    <linearGradient x1="806.42859" y1="146.64789" x2="848.66376" y2="148.45744" id="linearGradient4822" xlink:href="#linearGradient3939" gradientUnits="userSpaceOnUse" gradientTransform="translate(0,70)"/>
+    <linearGradient id="linearGradient3939">
+      <stop id="stop3941" style="stop-color:#b3b3b3;stop-opacity:1" offset="0"/>
+      <stop id="stop3947" style="stop-color:#ffffff;stop-opacity:1" offset="0.5"/>
+      <stop id="stop3943" style="stop-color:#808080;stop-opacity:1" offset="1"/>
+    </linearGradient>
+    <linearGradient x1="806.42859" y1="146.64789" x2="848.66376" y2="148.45744" id="linearGradient4820" xlink:href="#linearGradient3939" gradientUnits="userSpaceOnUse"/>
+    <linearGradient id="linearGradient4758">
+      <stop id="stop4760" style="stop-color:#000000;stop-opacity:1" offset="0"/>
+      <stop id="stop4762" style="stop-color:#918a6f;stop-opacity:0" offset="1"/>
+    </linearGradient>
+    <radialGradient cx="841.56232" cy="-55.67453" r="181.35938" fx="841.56232" fy="-55.67453" id="radialGradient4764" xlink:href="#linearGradient4758" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.7487689e-2,1.0810973,-1.5543374,3.9520171e-2,716.40852,-952.26674)"/>
+    <linearGradient id="linearGradient4498">
+      <stop id="stop4500" style="stop-color:#c83737;stop-opacity:1" offset="0"/>
+      <stop id="stop4502" style="stop-color:#501616;stop-opacity:1" offset="1"/>
+    </linearGradient>
+    <radialGradient cx="-288.27811" cy="1203.7058" r="61.380001" fx="-288.27811" fy="1203.7058" id="radialGradient23339" xlink:href="#linearGradient4498" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.4644707,1.1304615,-1.0381695,0.4265497,1095.5473,1030.3091)"/>
+    <radialGradient cx="488.89267" cy="588.70575" r="219.20311" fx="488.89267" fy="588.70575" id="radialGradient4633" xlink:href="#linearGradient4931" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-8.0035209e-3,1.2096377,-1.5872404,-1.0502094e-2,1429.2231,7.1996709)"/>
+    <radialGradient cx="459.32651" cy="604.53241" r="218.49857" fx="459.32651" fy="604.53241" id="radialGradient4635" xlink:href="#linearGradient4909" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-2.4717924e-8,0.4792097,-0.761379,-2.2833566e-8,965.49485,426.4337)"/>
+    <linearGradient x1="507.53687" y1="695.01477" x2="505.21655" y2="435.03162" id="linearGradient4637" xlink:href="#linearGradient4893" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,1171.1728)"/>
+    <radialGradient cx="518.93054" cy="498.96671" r="218.49857" fx="518.93054" fy="498.96671" id="radialGradient4639" xlink:href="#linearGradient4917" gradientUnits="userSpaceOnUse" gradientTransform="matrix(6.8182398e-3,0.7964116,-0.908528,7.7780924e-3,968.71756,124.33984)"/>
+    <linearGradient x1="507.53687" y1="695.01477" x2="505.21655" y2="435.03162" id="linearGradient4641" xlink:href="#linearGradient4893" gradientUnits="userSpaceOnUse" gradientTransform="translate(0,6)"/>
+    <linearGradient x1="507.53687" y1="695.01477" x2="505.21655" y2="435.03162" id="linearGradient4643" xlink:href="#linearGradient4893" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,1175.1728)"/>
+    <linearGradient x1="507.53687" y1="695.01477" x2="505.21655" y2="435.03162" id="linearGradient4645" xlink:href="#linearGradient4893" gradientUnits="userSpaceOnUse" gradientTransform="translate(0,4)"/>
+  </defs>
+  <g transform="translate(-77.173853,10.598399)" id="layer1">
+    <g transform="matrix(2.3320285,0,0,2.3320285,997.06433,-122.71408)" id="g2577">
+      <g transform="translate(1.4285714,-131.42857)" id="g2579">
+        <rect width="84.285713" height="138.57143" rx="12" ry="12" x="-334.28571" y="252.36218" id="rect2581" style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
+        <path d="M -291.42857,172.36218 A 48.57143,48.57143 0 1 1 -388.57143,172.36218 A 48.57143,48.57143 0 1 1 -291.42857,172.36218 z" transform="matrix(0.7205882,0,0,0.7205882,-47.142861,90.302877)" id="path2583" style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
+      </g>
+      <rect width="25.714291" height="114.28573" rx="8" ry="8" x="-172.70879" y="298.6347" transform="matrix(0.7660445,0.6427876,-0.6427876,0.7660445,0,0)" id="rect2585" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
+      <rect width="25.714294" height="114.28575" rx="8" ry="8" x="272.25455" y="-74.733215" transform="matrix(-0.7660445,0.6427876,0.6427876,0.7660445,0,0)" id="rect2587" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Open Clip Art Library</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Buddy</dc:title>
+        <dc:date>2008-11-03T14:42:04</dc:date>
+        <dc:description/>
+        <dc:source>http://openclipart.org/detail/19935/buddy-by-sheikh_tuhin-19935</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>sheikh_tuhin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>gents</rdf:li>
+            <rdf:li>gents</rdf:li>
+            <rdf:li>how i did it</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>male symbol</rdf:li>
+            <rdf:li>male symbol</rdf:li>
+            <rdf:li>man</rdf:li>
+            <rdf:li>man</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>person</rdf:li>
+            <rdf:li>person</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>silhouette</rdf:li>
+            <rdf:li>silhouette</rdf:li>
+            <rdf:li>svg</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

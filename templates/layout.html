@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="/static/images/logo.png">
+ 	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.min.css')}}">
+	<title>Wikidata Game</title>
+	{% block head %}{% endblock %}
+</head>
+<body>
+
+	{% block body %} {% endblock %}
+	<script type="text/javascript" src= "{{ url_for('static',filename='js/bootstrap.min.js') }}" ></script>	
+</body>
+</html>

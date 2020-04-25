@@ -1,0 +1,191 @@
+{% extends 'nav.html' %}
+{% block head2 %}
+<style type="text/css">
+  #muls1,#muls2,#muls3{
+    border-radius: 10px;
+    background-color: #ffa3b7;
+    color: black;border: 10px solid black;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 28rem;
+  }
+  .multi_forms{
+    font-size: 20px;
+    width: 50%;
+    padding: 2rem;
+  }
+  .submit{
+    font-size: 20px;
+    height: 5%;
+    width: 10%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #clockdiv{ 
+    font-family: sans-serif; 
+    color: #fff; 
+    display: inline-block; 
+    font-weight: 100; 
+    text-align: center; 
+    font-size: 70px; 
+} 
+#clockdiv > div{ 
+    padding: 15px; 
+    border-radius: 9px; 
+    background: #00BF96; 
+    display: inline-block; 
+} 
+#clockdiv div > span{ 
+    padding: 20px; 
+    border-radius: 9px; 
+    background: #00816A; 
+    display: inline-block; 
+} 
+</style>
+<script type="text/javascript">
+  var which_question=1;
+  var x=setInterval(function() {
+  s1=document.getElementById('second1').innerHTML
+  s2=document.getElementById('second2').innerHTML
+  if (s2==0)
+  {
+    s2=9;
+  }
+  else
+  {
+    s2=s2-1;
+  }
+  if (s2==9)
+  {
+    s1=s1-1;
+  }
+  document.getElementById('second1').innerHTML=s1;
+  document.getElementById('second2').innerHTML=s2;
+  if (s1==0 && s2==0) { 
+        if (which_question==1)
+        {
+          which_question=2;
+          document.getElementById('second1').innerHTML=1;
+          document.getElementById('second2').innerHTML=0;
+          document.getElementById('muls1').style.visibility='hidden';
+          document.getElementById('muls2').style.visibility='visible';
+        }
+        else if  (which_question==2)
+        {
+          which_question=3;
+          document.getElementById('second1').innerHTML=1;
+          document.getElementById('second2').innerHTML=0;
+          document.getElementById('muls2').style.visibility='hidden';
+          document.getElementById('muls3').style.visibility='visible';
+        }
+        else
+        {
+          clearInterval(x);
+          document.getElementById('SUBMIT').click()
+        }
+
+        } 
+}, 1000);
+
+function click1(){
+  document.getElementById('muls1').style.visibility='hidden';
+  document.getElementById('muls2').style.visibility='visible';
+  document.getElementById('second1').innerHTML=1;
+  document.getElementById('second2').innerHTML=0;
+  which_question=2;
+}
+function click2(){
+  document.getElementById('muls2').style.visibility='hidden';
+  document.getElementById('muls3').style.visibility='visible';
+  document.getElementById('second1').innerHTML=1;
+  document.getElementById('second2').innerHTML=0;
+  which_question=3;
+}
+</script>
+{% endblock %}
+{% block navbody %}
+{% macro render_field(field) %} {{ field.label }} {{ field(**kwargs)|safe }} {% if field.errors %} {% for error in field.errors %} {{ error }} {% endfor %} {% endif %} {% endmacro %}
+
+<form action="" method="POST">
+
+<div class="container-fluid" style="position: relative;">
+  <div class="row">
+      <div class="col-md-3"></div>
+      {% if already_played == 0 %}
+        <div class="col-md-6 mt-5" id='muls1' style="visibility: visible;"><br>
+          आपने पहले ही इस सत्र को खेला है, इसके समाप्त होने की प्रतीक्षा करें।<br><br>
+          <center>
+            <a href="/logged/{{ user_name }}">
+              <div style="padding: 10px;background-color: black; color: white;width: 100px;border-radius: 20px;">होमl</div><br>
+            </a>
+          </center>
+        </div>
+      {% else %}
+
+        <div class="col-md-6 mt-5" id='muls1' style="visibility: visible;"><br>
+          {{question[0]}}    <br><br>
+          <center>
+            <div class="multi_forms">
+              {{render_field(form.answer1,class_="form-control",placeholder="उत्तर दर्ज करें")}}
+            </div>
+            <div class="multi_forms">
+              {{render_field(form.source1,class_="form-control",placeholder="स्रोत")}}
+            </div>
+            <p>
+              <div class="submit" onclick="click1()"><img src="/static/images/next_arrow.png" style="height: 100%;width: 100%"></div>
+            </p>
+          </center>
+        </div>
+
+        <div class="col-md-6 mt-5" id='muls2' style="visibility: hidden;"><br>
+          {{question[1]}}    <br><br>
+          <center>
+            <div class="multi_forms">
+              {{render_field(form.answer2,class_="form-control",placeholder="उत्तर दर्ज करें")}}
+            </div>
+            <div class="multi_forms">
+              {{render_field(form.source2,class_="form-control",placeholder="स्रोत")}}
+            </div>
+            <p>
+              <div class="submit" onclick="click2()"><img src="/static/images/next_arrow.png" style="height: 100%;width: 100%"></div>
+            </p>
+          </center>
+        </div>
+
+        <div class="col-md-6 mt-5" id='muls3' style="visibility: hidden;"><br>
+          {{question[2]}}    <br><br>
+          <center>
+            <div class="multi_forms">
+              {{render_field(form.answer3,class_="form-control",placeholder="उत्तर दर्ज करें")}}
+            </div>
+            <div class="multi_forms">
+              {{render_field(form.source3,class_="form-control",placeholder="स्रोत")}}
+            </div>
+            <p>
+              <input class="submit" type="submit" value="सबमिट" id='SUBMIT'>
+            </p>
+          </center>
+        </div>
+        <div class="item" style="position: absolute;top: 40rem;left: 48rem;">
+              <div id="clockdiv"> 
+                <div> 
+                  <span class="seconds" id="second1">1</span> 
+                </div>
+                <div> 
+                  <span class="seconds" id="second2">0</span> 
+                </div> 
+              </div> 
+        </div>
+      {% endif %}
+      <div class="col-md-3"></div>
+
+    
+  </div>
+</div>
+
+</form>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="container jumbotron">
+  <h2>Couple Dal</h2>
+  {% from "static/_formhelpers.html" import render_field %}
+  {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <h4 style="color:red">{{ message }}</h4>
+        {% endfor %}
+      {% endif %} 
+  {% endwith %}
+  <form action="" method="POST">
+    <div class="form-group">
+      {{render_field(form.email,class_="form-control",placeholder="Enter email")}}
+    </div>
+    <div class='form-group'>
+			{{render_field(form.password,class_="form-control",placeholder="Enter Password")}}
+	</div>
+	
+    <p><input type="submit",class="btn btn-primary" value="Submit"></p>
+  </form>
+</div>
+{% endblock %}

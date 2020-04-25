@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css')}}">
+  <style type="text/css">
+    body {
+        background-image: url('/static/images/b2.jpg');
+      }
+  </style>
+{% endblock %}
+{% block body %}
+{% macro render_field(field) %} {{ field.label }} {{ field(**kwargs)|safe }} {% if field.errors %} {% for error in field.errors %} {{ error }} {% endfor %} {% endif %} {% endmacro %}
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    
+    <div class="fadeIn first">
+      <img src="./static/images/iiit.png" id="icon" alt="User Icon" width="45%" />
+      <img src="./static/images/logo.png" id="icon1" alt="User Icon" width="35%" />
+    </div>
+    <br>
+    {% if error %}
+         <p style="color: red"><strong>त्रुटि:</strong> {{ error }}
+    {% endif %}
+    <b>
+    <form action="" method="POST" enctype=multipart/form-data style="font-size: 21px;">
+
+    <div class="fadeIn second">
+      {{render_field(form.name,class_="form-control",placeholder="अपना पूरा नाम लिखे")}}
+    </div>
+    <div class="fadeIn third">
+      {{render_field(form.user_name,class_="form-control",placeholder="उपयोगकर्ता नाम (स्क्रीन नाम) दर्ज करें")}}
+    </div>
+    <div class="fadeIn fourth">
+      {{render_field(form.school_name,class_="form-control",placeholder="स्कूल का नाम दर्ज करें")}}
+    </div>
+    <div class="fadeIn fifth">
+      {{render_field(form.password,class_="form-control",placeholder="पास वर्ड दर्ज करें")}}
+    </div>
+    <div class="fadeIn sixth">
+      {{render_field(form.confirm,class_="form-control",placeholder="पासवर्ड की पुष्टि कीजिये")}}
+    </div>
+    <div class="fadeIn seventh">
+       <p>तस्वीर: <Br><input type=file name=file>
+        <div style="display: none;"><input type=submit value=अपलोड></div></p>
+    </div>
+    
+
+    <p>
+      <input type="submit" class="fadeIn eigth" value="सबमिट" style="font-size: 21px;">
+    </p>
+
+  </form>
+
+   
+  </div>
+</div>
+
+{% endblock %}

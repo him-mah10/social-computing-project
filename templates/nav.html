@@ -1,0 +1,103 @@
+{% extends 'layout.html' %}
+{% block head %}
+{% block head2 %}{% endblock %}
+<style>
+      body {
+        padding-top: 54px;
+        background-color: #4592d6;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+      img{
+        max-width: none;
+      }
+      nav{
+        background: black;
+      }
+      .choose_file{
+        padding:px;
+        width: 40%;
+        height: 30px;
+        background:black;
+        border: 1px solid white;
+        position:relative;
+        color:white;
+        border-radius:10px;
+        text-align:center;
+        float:left;
+        cursor:pointer
+      }
+      
+      .hide_file {
+          position: absolute;
+          z-index: 1000;
+          opacity: 0;
+          cursor: pointer;
+          right: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+      }
+      .card {
+        width: 16rem;
+        height: 11rem;
+        align-items: center;
+        background-color: white;
+        border: 0px;
+        margin: 1rem;
+        box-shadow: 4px 4px 7px white;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .card-text{
+        text-align: center;
+      }
+      .GameType {
+        font-size: 2rem;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px white solid;
+        cursor: pointer;
+      }
+      a{
+          text-decoration: none;
+          color: black;
+      }
+      a:hover{
+          text-decoration: none;
+          color: black;
+      }
+</style>
+    {% endblock %}
+{% block body %}    
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <span class="navbar-brand" style="font-size: 30px;color: white;"><b>विकिडाटा खेल</b>  <img src="/static/images/logo.png" height="40"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <b>
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/logged/{{user_name}}" style="color: white;">मुख्य पृष्ठ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logged/{{user_name}}/howtoplay" style="color: white;">कैसे खेलें?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Logout/{{user_name}}" style="color: white;">लॉग आउट</a>
+            </li>            
+          </ul>
+        </div>
+      </b>
+      </div>
+    </nav>
+
+    {% block navbody %} {% endblock %}
+{% endblock %}
