@@ -1,5 +1,5 @@
 # Social Computing Project
-Hello, this is a repository containing my work for Social Computing Project, take by Prof. Vasudeva Vara, at IIIT Hyderabad. The project aims to enhance Hindi and Telugu Wikidata using gamification.
+Hello, this is a repository containing my work for Social Computing Project, taken by Prof. Vasudeva Vara, at IIIT Hyderabad. The project aims to enhance Hindi and Telugu Wikidata using gamification.
 
 I have attached PDFs explaining the approach and final aim of the project.
 
